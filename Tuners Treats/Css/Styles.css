@@ -38,7 +38,7 @@ nav ul li a {
 
 .hero {
     text-align: center;
-    background: url('') no-repeat center center/cover;
+    background: url('C:\Users\H\Documents\GitHub\Assessment -2.1-Webpage-Report\2.1-Assessment\Tuners Treats\Images\Black-women-baking-cake.jpg') no-repeat center center/cover;
     color: #7c109231;
     padding: 100px 20px;
 }
@@ -54,7 +54,7 @@ nav ul li a {
 
 .btn {
     background-color: #333;
-    color: #7c109231,;
+    color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -86,7 +86,7 @@ nav ul li a {
 
 footer {
     background-color: #333;
-    color: #7c109231,;
+    color: white;
     text-align: center;
     padding: 20px 0;
     position: fixed;
@@ -95,7 +95,7 @@ footer {
 }
 
 .social-media a {
-    color: #7c109231,;
+    color: white;
     margin: 0 10px;
     text-decoration: none;
 }
