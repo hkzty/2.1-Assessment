@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #f8b400;
+    background-color: #795e15;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
@@ -32,14 +32,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #7c109231;
     font-weight: bold;
 }
 
 .hero {
     text-align: center;
-    background: url('../images/hero.jpg') no-repeat center center/cover;
-    color: white;
+    background: url('') no-repeat center center/cover;
+    color: #7c109231;
     padding: 100px 20px;
 }
 
@@ -73,7 +73,7 @@ nav ul li a {
 }
 
 .product-item {
-    background-color: #fff;
+    background-color: #7c109231;
     border: 1px solid #ddd;
     padding: 20px;
     width: 300px;
