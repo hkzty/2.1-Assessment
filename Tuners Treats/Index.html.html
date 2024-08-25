@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird Image Selector</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <style>
+        :root {
+            --primary-color: hsl(125, 80%, 51%);
+            --secondary-color: rgb(0, 0, 0);
+            --bg-color: rgb(32, 149, 40);
+            --font-color: rgb(0, 0, 0);
+            --heading-color: rgb(0, 0, 0);
+        }
+        [data-theme="dark"] {
+            --primary-color: rgb(0, 0, 0);
+            --secondary-color: rgb(32, 149, 40);
+            --bg-color: rgb(30, 30, 30);
+            --font-color: rgb(32, 149, 40);
+            --heading-color: rgb(255, 204, 0);
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--font-color);
+            font-family: 'Open Sans Condensed', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            color: var(--heading-color);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        button {
+            margin: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body data-theme="light">
+  <h1>Bird Image Selector</h1>
+    <img id="birdImage" src="http://www.outgrabe.net/bird00.jpg" alt="Bird Image">
+    <p id="birdDescription">Pardalote by fir0002 (CC-by-NC)</p>
+    <div>
+        <button onclick="changeBird('http://www.outgrabe.net/bird00.jpg', 'Pardalote by fir0002 (CC-by-NC)')">Pardalote</button>
+        <button onclick="changeBird('http://www.outgrabe.net/bird01.jpg', 'Purple swamp hen by Toby Hudson (CC-by-SA)')">Purple Swamp Hen</button>
+        <button onclick="changeBird('http://www.outgrabe.net/bird02.jpg', 'White-headed Stilt by JJ Harrison (CC-by-SA)')">White-headed Stilt</button>
+        <button onclick="changeBird('http://www.outgrabe.net/bird03.jpg', 'Inland Thornbill by Peter Jacobs (CC-by-SA)')">Inland Thornbill</button>
+        <button onclick="changeBird('http://www.outgrabe.net/bird04.jpg', 'Rose Robin by JJ Harrison (CC-by-SA)')">Rose Robin</button>
+    </div>
+
+    <button onclick="toggleTheme()">Change Theme</button>
+    
+    <script>
+      function changeBird(imageUrl, description) {
+          document.getElementById('birdImage').src = imageUrl;
+          document.getElementById('birdDescription').innerText = description;
+      }
+      function toggleTheme() {
+          const currentTheme = document.body.getAttribute('data-theme');
+          document.body.setAttribute('data-theme', currentTheme === 'light' ? 'dark' : 'light');
+      }
+  </script>
+</body>
+</html>
