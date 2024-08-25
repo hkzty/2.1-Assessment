@@ -38,7 +38,7 @@ nav ul li a {
 
 .hero {
     text-align: center;
-    background: url('C:\Users\H\Documents\GitHub\Assessment -2.1-Webpage-Report\2.1-Assessment\Tuners Treats\Images\Black-women-baking-cake.jpg') no-repeat center center/cover;
+    background: url('<img src="Images/Black-women-baking-cake.jpg') no-repeat center center/cover;
     color: #7c109231;
     padding: 100px 20px;
 }
