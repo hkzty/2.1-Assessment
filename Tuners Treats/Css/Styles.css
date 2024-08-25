@@ -32,14 +32,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #7c109231;
+    color: white;
     font-weight: bold;
 }
 
 .hero {
     text-align: center;
-    background: url('<img src="Images/Black-women-baking-cake.jpg') no-repeat center center/cover;
-    color: #7c109231;
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+    color: white;
     padding: 100px 20px;
 }
 
