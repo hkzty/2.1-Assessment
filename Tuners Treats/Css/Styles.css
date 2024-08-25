@@ -54,7 +54,7 @@ nav ul li a {
 
 .btn {
     background-color: #333;
-    color: white;
+    color: #7c109231,;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -86,7 +86,7 @@ nav ul li a {
 
 footer {
     background-color: #333;
-    color: white;
+    color: #7c109231,;
     text-align: center;
     padding: 20px 0;
     position: fixed;
@@ -95,7 +95,7 @@ footer {
 }
 
 .social-media a {
-    color: white;
+    color: #7c109231,;
     margin: 0 10px;
     text-decoration: none;
 }
