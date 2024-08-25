@@ -1,204 +1,51 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My page title</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
-
-    <style>
-      :root {
-        --base-font-color: rgb(131,148,150);
-        --secondary-font-color: rgb(88,110,117);
-        --emphasised-font: rgb(147,161,161);
-        --c-background-color: rgb(0, 43, 54);
-        --c-background-highlights: rgb(7, 54, 66);
-        --c-yellow: rgb(181,137,  0);
-        --c-orange: rgb(203, 75, 22);
-        --c-red: rgb(220, 50, 47);
-        --c-magenta: rgb(211, 54,130);
-        --c-violet: rgb(108,113,196);
-        --c-blue: rgb(38,139,210);
-        --c-cyan: rgb(42,161,152);
-        --c-green: rgb(133,153,0);
-      }
-
-              /* Body Styling */
-        body {
-            background-color: var(--c-background-color);
-            color: var(--base-font-color);
-            max-width: 800px;
-            margin: 0 auto;
-            font-family: 'Open Sans Condensed', sans-serif;
-        }
-
-        /* Header and Footer Styling */
-        header, footer {
-            background-color: var(--c-background-highlights);
-            text-align: center;
-            padding: 0px;
-            color: var(--base-font-color);
-            font-family: 'Open Sans Condensed', sans-serif;
-        }
-
-        header h1 {
-            font-size: 300%;
-            color: var(--c-yellow);
-        }
-
-        /* Navigation Styling */
-        nav {
-            width: 100%;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: space-around;
-            list-style-type: none;
-            padding: 0;
-            background-color: var(--c-background-highlights);
-        }
-
-        nav li {
-            flex: 1;
-            text-align: center;
-        }
-
-        nav a {
-            color: var(--base-font-color);
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            color: var(--c-orange);
-        }
-
-        /* Main Content Styling */
-        main {
-            display: flex;
-            gap: 20px;
-        }
-
-        article {
-            flex: 3;
-            padding-top: 10px;
-        }
-
-        article h2, article h3 {
-            padding-top: 50px;
-        }
-
-        article p {
-            color: var(--base-font-color);
-        }
-
-        article a {
-            color: var(--c-magenta);
-        }
-
-        article a:hover {
-            color: var(--c-orange);
-        }
-
-        /* Subsection Container Styling */
-        .subsection-content {
-            border: 3px solid var(--c-cyan); /* Add border */
-            padding: 10px; /* Add padding */
-            margin-top: 20px; /* Add margin */
-        }
-
-        /* Aside Styling */
-        aside {
-            flex: 1;
-            color: var(--c-green);
-        }
-
-        aside a {
-            color: var(--c-red);
-        }
-
-        aside a:hover {
-            color: var(--c-blue);
-        }
-
-        /* Fine-tuning padding and margin */
-        article h2, article h3 {
-            padding-top: 50px; /* Set top padding for headings */
-        }
-
-        /* Footer Styling */
-        footer {
-            background-color: var(--c-background-highlights);
-            text-align: center;
-            padding: 10px;
-            color: var(--base-font-color);
-        }
-    </style>
-  </head>
-
-  <body>
-    <!-- Here is our main header that is used across all the pages of our website -->
+    <meta name="description" content="Contact us to place an order or inquire about our products.">
+    <title>Turner's Treats | Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
     <header>
-      <h1>Header</h1>
+        <nav>
+            <img src="images/logo.png" alt="Turner's Treats Logo" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Our team</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <form action="#" method="post" id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-       <!-- A Search form is another common non-linear way to navigate through a website. -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-       <form>
-         <input type="search" name="q" placeholder="Search query">
-         <input type="submit" value="Go!">
-       </form>
-     </nav>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-    <!-- Here is our page's main content -->
-    <main>
-      <!-- It contains an article -->
-      <article>
-          <h2>Article heading</h2>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Check this link</a> for more information. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
-
-          <div class="subsection-content">
-              <h3>Subsection</h3>
-              <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
-              <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
-          </div>
-
-          <div class="subsection-content">
-              <h3>Another subsection</h3>
-              <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
-              <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
-          </div>
-      </article>
-
-      <!-- the aside content can also be nested within the main content -->
-      <aside>
-        <h2>Related</h2>
-
-        <ul>
-          <li><a href="#">Oh I do like to be beside the seaside</a></li>
-          <li><a href="#">Oh I do like to be beside the sea</a></li>
-          <li><a href="#">Although in the North of England</a></li>
-          <li><a href="#">It never stops raining</a></li>
-          <li><a href="#">Oh well...</a></li>
-        </ul>
-      </aside>
-
-    </main>
-
-    <!-- And here is our main footer that is used across all the pages of our website -->
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
 
     <footer>
-      <p>©Copyright 2050 by nobody. All rights reversed.</p>
+        <p>&copy; 2024 Turner's Treats. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
     </footer>
 
-  </body>
+    <script src="js/script.js"></script>
+</body>
 </html>

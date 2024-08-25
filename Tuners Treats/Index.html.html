@@ -2,69 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bird Image Selector</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
-    <style>
-        :root {
-            --primary-color: hsl(125, 80%, 51%);
-            --secondary-color: rgb(0, 0, 0);
-            --bg-color: rgb(32, 149, 40);
-            --font-color: rgb(0, 0, 0);
-            --heading-color: rgb(0, 0, 0);
-        }
-        [data-theme="dark"] {
-            --primary-color: rgb(0, 0, 0);
-            --secondary-color: rgb(32, 149, 40);
-            --bg-color: rgb(30, 30, 30);
-            --font-color: rgb(32, 149, 40);
-            --heading-color: rgb(255, 204, 0);
-        }
-        body {
-            background-color: var(--bg-color);
-            color: var(--font-color);
-            font-family: 'Open Sans Condensed', sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        h1 {
-            color: var(--heading-color);
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        button {
-            margin: 5px;
-            padding: 10px;
-            cursor: pointer;
-        }
-    </style>
+    <meta name="description" content="Turner's Treats - Home-baked artisanal goods in Melbourne. Custom cakes, pastries, and bread made to order.">
+    <title>Turner's Treats | Home</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body data-theme="light">
-  <h1>Bird Image Selector</h1>
-    <img id="birdImage" src="http://www.outgrabe.net/bird00.jpg" alt="Bird Image">
-    <p id="birdDescription">Pardalote by fir0002 (CC-by-NC)</p>
-    <div>
-        <button onclick="changeBird('http://www.outgrabe.net/bird00.jpg', 'Pardalote by fir0002 (CC-by-NC)')">Pardalote</button>
-        <button onclick="changeBird('http://www.outgrabe.net/bird01.jpg', 'Purple swamp hen by Toby Hudson (CC-by-SA)')">Purple Swamp Hen</button>
-        <button onclick="changeBird('http://www.outgrabe.net/bird02.jpg', 'White-headed Stilt by JJ Harrison (CC-by-SA)')">White-headed Stilt</button>
-        <button onclick="changeBird('http://www.outgrabe.net/bird03.jpg', 'Inland Thornbill by Peter Jacobs (CC-by-SA)')">Inland Thornbill</button>
-        <button onclick="changeBird('http://www.outgrabe.net/bird04.jpg', 'Rose Robin by JJ Harrison (CC-by-SA)')">Rose Robin</button>
-    </div>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="Turner's Treats Logo" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <button onclick="toggleTheme()">Change Theme</button>
-    
-    <script>
-      function changeBird(imageUrl, description) {
-          document.getElementById('birdImage').src = imageUrl;
-          document.getElementById('birdDescription').innerText = description;
-      }
-      function toggleTheme() {
-          const currentTheme = document.body.getAttribute('data-theme');
-          document.body.setAttribute('data-theme', currentTheme === 'light' ? 'dark' : 'light');
-      }
-  </script>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Turner's Treats</h1>
+        <p>Your go-to destination for artisanal baked goods in Melbourne. Custom cakes, pastries, and bread made to order.</p>
+        <a href="products.html" class="btn">Order Now</a>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <h2>Our Best Sellers</h2>
+        <div class="product-gallery">
+            <div class="product-item">
+                <img src="images/product1.jpg" alt="Custom Cake">
+                <h3>Custom Cake</h3>
+                <p>Beautifully crafted cakes for all occasions.</p>
+            </div>
+            <div class="product-item">
+                <img src="images/product2.jpg" alt="Artisanal Bread">
+                <h3>Artisanal Bread</h3>
+                <p>Freshly baked bread with a variety of flavors.</p>
+            </div>
+            <!-- More Products -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Turner's Treats. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
