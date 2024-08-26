@@ -118,12 +118,14 @@ hr {
 
 .product-item {
     display: flex;
-    align-items: center; /* Align items vertically */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text within the container */
 }
 
 .product-image {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    margin-right: 20px; /* Add margin to separate the image from text */
+    margin-bottom: 10px; /* Add margin below the image */
 }
