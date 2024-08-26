@@ -128,15 +128,21 @@ hr {
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
     text-align: center; /* Center text within the container */
+    border-bottom: 2px solid #555; /* Add a different colored border under the end of the text */
 }
 
 .product-image {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    margin-bottom: 20px; /* Add margin below the image */
+    margin-bottom: 10px; /* Add margin below the image */
 }
 
 .product-gallery {
     margin-bottom: 20px; /* Add margin below the product gallery */
+}
+
+.additional-bg {
+    background-color: #7c109231; /* Set a different background color for the additional lines */
+    padding: 20px 0; /* Add padding for the additional lines */
 }
