@@ -26,6 +26,7 @@ nav ul {
     margin: 0;
     display: flex;
     gap: 20px;
+    align-items: center; /* Align items vertically */
 }
 
 nav ul li {
@@ -36,6 +37,12 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+/* Additional Styles for Header Text Formatting */
+h1 {
+    font-size: 1em; /* Adjust the font size for the h1 element */
+    margin: 0; /* Remove default margin */
 }
 
 .hero {
