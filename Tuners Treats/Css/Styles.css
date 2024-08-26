@@ -111,3 +111,7 @@ form {
     flex-direction: column;
     align-items: center;
 }
+
+hr {
+    margin: 10px 0;
+}
