@@ -115,3 +115,9 @@ form {
 hr {
     margin: 10px 0;
 }
+
+.product-image {
+    width: 200px; /* Set the desired width for the images */
+    height: 200px; /* Set the desired height for the images */
+    object-fit: cover; /* Maintain aspect ratio and cover the space */
+}
