@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    background-color: #7c109231;
 }
 
 header {
@@ -39,7 +40,7 @@ nav ul li a {
 .hero {
     text-align: center;
     background: url('../images/hero.jpg') no-repeat center center/cover;
-    color: white;
+    color: ;
     padding: 100px 20px;
 }
 
