@@ -4,11 +4,11 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #7c109231;
+    background-color: #7c109231; /* Set the background color for the body */
 }
 
 header {
-    background-color: #333;
+    background-color: #333; /* Set the background color for the header */
     padding: 10px 5px;
     display: flex;
     justify-content: space-between;
@@ -123,6 +123,7 @@ hr {
     margin: 10px 0;
 }
 
+/* Additional Styles for Product Display */
 .product-item {
     display: flex;
     flex-direction: column; /* Stack items vertically */
