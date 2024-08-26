@@ -116,8 +116,14 @@ hr {
     margin: 10px 0;
 }
 
+.product-item {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
 .product-image {
-    width: 200px; /* Set the desired width for the images */
-    height: 200px; /* Set the desired height for the images */
-    object-fit: cover; /* Maintain aspect ratio and cover the space */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px; /* Add margin to separate the image from text */
 }
